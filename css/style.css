@@ -1,43 +1,86 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    background: dodgerblue;
     font-family: 'Nerko One', cursive;
-    background-color: rgb(124, 207, 207);
-}
-
-.container {
-    width: 1170px;
-    margin: 30px auto;
 }
 
 h1 {
     text-align: center;
     color: #fff;
-    font-size: 100px;
+    margin: 20px;
+    font-size: 50px;
     text-shadow: 2px 2px #000;
-    margin-bottom: 20px;
 }
 
-.box {
-    width: 180px;
-    height: 220px;
-    display: inline-block;
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    background-image: url(../img/pattern.png);
-    background-size: contain;
-    position: relative;
-    left: 15%;
-    box-shadow: 5px 10px 18px #000;
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.card1:hover {
-    background-color: white;
-    background-image: url(../img/noun_Bicycle_3134821.png);
-    background-repeat: no-repeat;
+.card {
+  background: #fff;
+  background-image: url(../img/pattern.png);
+  background-size: contain;
+  box-shadow: 5px 10px 8px #888888;
+  width: calc(100% / 4 - 20px);
+  float: left;
+  margin: 10px;
+  position: relative;
+  border-radius: 10px;
 }
+
+.card img {
+  background: #fff;
+  float: left;  
+  position: relative;
+  border-radius: 10px;
+}
+
+.overlay {
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+.text {
+    text-align: center;
+    color: orangered;
+    font-size: 35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    text-shadow: 2px 2px #000;
+}
+
+.text1 {
+    text-align: center;
+    color: purple;
+    font-size: 35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-shadow: 2px 2px #000;
+}
+
+
+.footer {
+    text-align: center;
+    font-size: 25px;
+}
+
